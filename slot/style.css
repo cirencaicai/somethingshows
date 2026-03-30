@@ -1,0 +1,40 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+.reels {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+.reel {
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 5px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  font-size: 24px;
+  font-weight: bold;
+}
+#spinBtn {
+  font-size: 18px;
+  padding: 10px 20px;
+}
+#message {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #333;
+}
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #999;
+  padding: 4px 8px;
+}
+th {
+  background-color: #ddd;
+}

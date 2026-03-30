@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <title>简单网页老虎机 2.1</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>网页端老虎机游戏 2.1</h1>
+    <div id="reels" class="reels">
+        <div class="reel" id="r0">?</div>
+        <div class="reel" id="r1">?</div>
+        <div class="reel" id="r2">?</div>
+        <div class="reel" id="r3">?</div>
+        <div class="reel" id="r4">?</div>
+    </div>
+    <div>
+        余额: <span id="balance">0.00</span>
+    </div>
+    <div>
+        押注金额: <input type="number" id="betAmount" value="1" min="0" step="0.01" />
+    </div>
+    <button id="spinBtn">旋转</button>
+    <div id="message"></div>
+    <div style="margin-top:10px;">
+        <button id="addMoneyBtn">充值 +100</button>
+    </div>
+
+    <h2>投注历史</h2>
+    <table id="historyTable">
+        <thead>
+            <tr><th>时间</th><th>押注</th><th>赢得</th><th>余额</th></tr>
+        </thead>
+        <tbody>
+        <!-- 记录将被添加到这里 -->
+        </tbody>
+    </table>
+
+    <h2>符号与主题</h2>
+    <ul>
+        <li>A：魔法宝石（高稀有度）</li>
+        <li>K：金色戒指（中稀有度）</li>
+        <li>Q：魔法卷轴（中稀有度）</li>
+        <li>J：木质护符（低稀有度）</li>
+        <li>10：普通符号（低稀有度）</li>
+        <li>9：普通符号（低稀有度）</li>
+    </ul>
+
+    <h2>支付表（单线）</h2>
+    <table id="paytable">
+        <thead>
+            <tr><th>符号</th><th>3个</th><th>4个</th><th>5个</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>A</td><td>5</td><td>20</td><td>100</td></tr>
+            <tr><td>K</td><td>4</td><td>15</td><td>80</td></tr>
+            <tr><td>Q</td><td>3</td><td>10</td><td>60</td></tr>
+            <tr><td>J</td><td>2</td><td>8</td><td>40</td></tr>
+            <tr><td>10</td><td>1</td><td>5</td><td>20</td></tr>
+            <tr><td>9</td><td>1</td><td>3</td><td>15</td></tr>
+        </tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
